@@ -1,0 +1,48 @@
+# .NET build artifacts
+bin/
+obj/
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio
+.vscode/
+.vs/
+*.DotSettings.user
+
+# Rider
+.idea/
+*.sln.iml
+
+# Tailwind CSS artifacts
+**/wwwroot/css/site.css
+**/wwwroot/css/*.css.map
+
+# Node/npm
+node_modules/
+package-lock.json
+
+# Logs
+*.log
+logs/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Publish artifacts
+publish/
+*.db
+
+# Secrets / env
+*.env
+*.secrets.json
+
+# Test result files
+TestResult.xml
+TestResults/
+
+# Global JetBrains Rider settings
+.idea/
