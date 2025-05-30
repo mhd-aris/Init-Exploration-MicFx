@@ -16,8 +16,8 @@ public sealed class Startup : StartupBase
     {
         routes.MapAreaControllerRoute(
             name: "HelloWorld",
-            areaName: "HelloWorld",
-            pattern: "HelloWorld/{controller=HelloWorld}/{action=Index}/{id?}"
+            areaName: "MicFx.Module.HelloWorld",
+            pattern: "Hello/{action=Index}/{id?}"
         );
     }
 }

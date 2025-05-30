@@ -2,15 +2,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services
     .AddOrchardCore()
-    .AddMvc()
-    // // Orchard Specific Pipeline
-    // .ConfigureServices( services => {
-
-    // })
-    // .Configure( (app, routes, services) => {
-
-    // })
-;
+    .AddMvc();
 
 var app = builder.Build();
 
@@ -28,3 +20,6 @@ app.UseStaticFiles();
 app.UseOrchardCore();
 
 app.Run();
+
+// Make the implicit Program class public for testing
+public partial class Program { }

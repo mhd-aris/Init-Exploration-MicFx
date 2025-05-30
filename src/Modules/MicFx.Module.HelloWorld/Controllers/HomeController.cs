@@ -1,18 +1,18 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MicFx.Module.HelloWorld.Controllers;
 
 [Route("Hello")]
-
 public class HelloWorldController : Controller
 {
     public ActionResult Index()
     {
         return View();
+    }
+
+    [HttpGet("test")]
+    public ActionResult Test()
+    {
+        return Json(new { message = "Hello from MicFx!" });
     }
 }
